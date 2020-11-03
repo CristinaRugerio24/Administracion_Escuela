@@ -6,6 +6,7 @@ import javax.swing.*;
 public class VtnLoginAdmin extends JFrame{
 	JButton btnAcceder;
 	JTextField jtfNombreU;
+	JLabel jlabelF; 
 	
 	public VtnLoginAdmin() {
 		
@@ -23,13 +24,19 @@ public class VtnLoginAdmin extends JFrame{
 	public void inicializar() {
 		btnAcceder = new JButton("ACCEDER");
 		jtfNombreU = new JTextField("145");
+		
+		ImageIcon imagen3= new ImageIcon("C:\\Users\\crist\\git\\Administracion_Escuela\\Administración_Escuela\\img\\inicioAdmp.png");  
+		jlabelF= new JLabel(imagen3); 
+		
 	}
 	
 	public void agregarComponentes() {
 		this.add(btnAcceder);
-		this.add(jtfNombreU);
-		btnAcceder.setBounds(600,200,150,100);
+		//this.add(jtfNombreU);
+		this.add(jlabelF); 
+		btnAcceder.setBounds(550,450,150,40);
 		jtfNombreU.setBounds(100,70,150,100);
+		jlabelF.setBounds(0, 0, 850, 500);
 		
 	}
 	
